@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>I Love You</title>
+  <style>
+    body {
+      background-color: #fdf6e3;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      overflow: hidden;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    .card {
+      background-color: #ffe4c4;
+      border: 4px dashed #cc5200;
+      padding: 50px;
+      border-radius: 20px;
+      box-shadow: 6px 6px 0px #d6c6a5;
+      text-align: center;
+      font-size: 30px;
+      font-weight: bold;
+      color: #cc0066;
+      z-index: 1;
+      position: relative;
+    }
+
+    .love-text {
+      font-size: 32px;
+    }
+
+    .heart {
+      position: absolute;
+      animation: floatUp 6s linear infinite;
+      font-size: 24px;
+      opacity: 0.7;
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh);
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh);
+        opacity: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="love-text">I love you Sarsoura ❤️</div>
+  </div>
+
+  <!-- 💕 Floating emoji hearts (copy as many as you'd like!) -->
+  <div class="heart" style="left: 10%; animation-delay: 0s;">💕</div>
+  <div class="heart" style="left: 20%; animation-delay: 1s;">💖</div>
+  <div class="heart" style="left: 30%; animation-delay: 2s;">💞</div>
+  <div class="heart" style="left: 40%; animation-delay: 3s;">💕</div>
+  <div class="heart" style="left: 50%; animation-delay: 4s;">💖</div>
+  <div class="heart" style="left: 60%; animation-delay: 2s;">💘</div>
+  <div class="heart" style="left: 70%; animation-delay: 1s;">💓</div>
+  <div class="heart" style="left: 80%; animation-delay: 3s;">💞</div>
+  <div class="heart" style="left: 90%; animation-delay: 0.5s;">💕</div>
+
+</body>
+</html>

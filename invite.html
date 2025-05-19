@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sahra chez Hala</title>
+  <style>
+    body {
+      background-color: #fdf6e3;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .card {
+      background-color: #ffe4c4;
+      border: 4px dashed #cc5200;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 6px 6px 0px #d6c6a5;
+      text-align: center;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 20px;
+      margin: 20px 0;
+    }
+
+    .button-group {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 20px;
+    }
+
+    .btn {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 40px;
+      cursor: pointer;
+      color: white;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .yes {
+      background-color: #28a745;
+      text-decoration: none;
+    }
+
+    .no {
+      background-color: #dc3545;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Sahra chez Hala 🚪🏃‍♀️💨</h1>
+    <p>Rh teje Sara al sahra l 3nde?</p>
+    <div class="button-group">
+      <a href="sarsoura.html" class="btn yes">Yes! 🎉</a>
+      <button class="btn no" id="noBtn">Nope 🙅‍♂️</button>
+    </div>
+  </div>
+
+  <script>
+    const noBtn = document.getElementById('noBtn');
+    let distance = 0;
+
+    noBtn.addEventListener('mouseover', () => {
+      distance += 100;
+      if (distance > 300) {
+        distance = 0;
+      }
+      noBtn.style.transform = `translateX(${distance}px)`;
+    });
+  </script>
+
+</body>
+</html>
